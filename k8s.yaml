@@ -1,0 +1,7 @@
+---
+- name: List all hosts (Kubernetes Pods)
+  hosts: all
+  tasks:
+    - name: Print pod names
+      debug:
+        var: inventory_hostname
